@@ -7,7 +7,7 @@ function Hero() {
         <h1 className="font-bold text-5xl">
           Sidan för Sveriges bästa bonusar!
         </h1>
-        <p className="font-semibold text-black/60 mt-1">
+        <p className="font-semibold  mt-1">
           Här hittar du de bästa bonusarna inom svenskt casino och spelen med
           högst return to player.
         </p>

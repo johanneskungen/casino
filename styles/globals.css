@@ -4,10 +4,10 @@
 
 @layer base {
   li {
-    @apply w-32 justify-center h-12 rounded shadow-xl hover:shadow-2xl bg-indigo-900 cursor-pointer text-white flex items-center text-sm font-semibold;
+    @apply w-32 justify-center h-12 rounded shadow-xl hover:shadow-2xl bg-[#408eb3] cursor-pointer text-white flex items-center text-sm font-semibold hover:scale-105;
   }
-  .grid-box{
-    @apply border p-2 rounded shadow-xl cursor-pointer h-24 flex flex-col justify-center
+  .grid-box {
+    @apply p-2 rounded shadow-xl cursor-pointer h-44 flex flex-col justify-center bg-[#4fb6a0] hover:scale-110 duration-150;
   }
 }
 
@@ -24,7 +24,7 @@
     transform: translate3d(0, 0, 0);
   }
   50% {
-    transform: translate3d(0, 15px,0);
+    transform: translate3d(0, 15px, 0);
   }
   100% {
     transform: translate3d(0, 0, 0);
@@ -39,4 +39,10 @@
 }
 .container1 .dot:nth-last-child(3) {
   animation: jumpingAnimation 0.6s 0.5s ease-in infinite;
+}
+
+#demotext {
+  color: #ffffff;
+  text-shadow: 2px 2px 0px #ffffff, 5px 4px 0px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
 }

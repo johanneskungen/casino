@@ -8,7 +8,7 @@ export default function Document() {
         <title>Jackpott, din hjälp till storvinsten</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body>
+      <body className="bg-[#408eb3] text-white">
         <Main />
         <NextScript />
       </body>
