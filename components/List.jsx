@@ -13,6 +13,12 @@ function List() {
       `https://us-central1-webscraper-a7e06.cloudfunctions.net/scrapeData?type=${type}`
     );
     const data = await response.json();
+    if (type !== "freespins") {
+      setRtps(data);
+      setLoading(false);
+    }
+    const lowArr = data.sort((a, b) => a.oms - b.oms);
+    setRtps(lowArr);
     setRtps(data);
     setLoading(false);
   };
@@ -23,7 +29,11 @@ function List() {
   return (
     <div className="flex flex-col items-center justify-center">
       <section className="flex justify-center">
-        <ul className={"flex gap-4 p-6 w-[1000px] justify-center bg-white rounded-sm" + bg}>
+        <ul
+          className={
+            "flex gap-4 p-6 w-[1000px] justify-center bg-white rounded-sm" + bg
+          }
+        >
           <li onClick={() => setActive("rtp")}>Högsta RTP</li>
           <li onClick={() => setActive("freespins")}>Bästa Bonusarna</li>
           <li>Comming</li>
