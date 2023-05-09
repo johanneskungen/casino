@@ -1,0 +1,15 @@
+import React from "react";
+
+function Navbar() {
+  return (
+    <nav className="border flex items-center justify-between p-8 px-24">
+      <h2 className="text-xl">Casinosverige</h2>
+      <div className="flex gap-12 text-sm">
+        <p>Högsta rtp</p>
+        <p>Bästa bonusarna</p>
+      </div>
+    </nav>
+  );
+}
+
+export default Navbar;
