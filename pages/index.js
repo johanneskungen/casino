@@ -3,6 +3,9 @@ import List from "@/components/List";
 import React from "react";
 
 function index() {
+  const fetchbackend = () => {
+    fetch("/api/handler")
+  }
   return (
     <>
       <Hero />

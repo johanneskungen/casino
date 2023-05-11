@@ -10,7 +10,7 @@ function List() {
   const handleFetch = async (type) => {
     setLoading(true);
     const response = await fetch(
-      `https://us-central1-webscraper-a7e06.cloudfunctions.net/scrapeData?type=${type}`
+      `/api/handler?type=${type}`
     );
     const data = await response.json();
     if (type !== "freespins") {
